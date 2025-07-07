@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap');
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.outer-container {
+  width: 900px;
+  height: 600px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column; /* Stack inner-panel and footer vertically */
+  justify-content: space-between; /* Ensures space between inner-panel and footer */
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* For positioning footer */
+}
+
+.inner-panel {
+  width: 850px; /* Adjusted to fit both panels with some padding */
+  height: 500px; /* Adjusted to fit content */
+  background-color: #f0f0f0; /* Neutral background for the inner panel */
+  color: black;
+  display: flex;
+  justify-content: space-between; /* Keeps left and right panels separate */
+  align-items: stretch;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-bottom: 0px; /* Small space between inner-panel and footer */
+  margin-top: 40px;
+}
+
+.left-panel {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom:0px;
+}
+
+.left-panel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.shutterstock.com/image-photo/empty-school-corridor-260nw-541706089.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.10;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+.left-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.logo h1 {
+  font-size: 2em;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.welcome-container {
+  margin: 0px 40px;
+  background-color: ;
+}
+
+.welcome-text {
+  font-size: 1em;
+  margin: 0 0 10px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 10;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.7em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 1;
+}
+
+.features {
+  margin: 0px 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.feature {
+  font-size: 0.7em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.testimonial {
+  margin: 0px 50px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.6em;
+  text-align: center;
+  border-bottom: 50px;
+}
+
+.footer-text {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.role-btn {
+  padding: 5px 15px;
+  border: 1px solid #00bfff;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.role-btn.active {
+  background: #1e3a8a;
+  color: white;
+  border: 3px solid #808080;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.9em;
+  color: #666666;
+  text-align: start;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.forgot-password {
+  font-size: 0.8em;
+  color: #016fff;
+  text-align: right;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 10px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.google-login {
+  color: #666666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.google-login p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.copyright {
+  font-size: 1.0em;
+  text-align: right;
+  margin-top: 0px;
+  color: #666;
+  padding-bottom: 20px;
+}
+
+.custom-footer {
+  font-size: 0.8em; /* Adjusted for readability */
+  color: #000000;
+  width: 900px; /* Match inner-panel width */
+  display: flex;
+  justify-content: space-between; /* Distribute items left, center, right */
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.footer-left {
+  margin-right: auto;
+}
+
+.footer-center {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 0px 0px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eye-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #666;
+  padding: 0;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.label-container label {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.forgot-password {
+  font-size: 0.8em;
+  color: #0099ff;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
